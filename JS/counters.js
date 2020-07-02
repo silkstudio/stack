@@ -1,5 +1,5 @@
 
-import { CountUp } from 'https://cdn.jsdelivr.net/gh/silkstudio/Stack/JS/quicklink/quicklink-min.js';
+import { CountUp } from 'https://cdn.jsdelivr.net/gh/silkstudio/Stack/JS/countUp/countUp-min.js';
 
 
 // Get counter elements
