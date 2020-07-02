@@ -1,7 +1,3 @@
-
-import { CountUp } from 'https://cdn.jsdelivr.net/gh/silkstudio/Stack/JS/countUp/countUp-min.js';
-
-
 // Get counter elements
 
 const counterOne = document.getElementById('counter-1');
@@ -32,26 +28,6 @@ function checkVisible( elm, eval ) {
 
 
 
-
-
-
-
-// Define scroll function
-
- $(window).on('scroll',function() {
-    if (checkVisible($(counterOne))) {
- 
-          if (!countUp.error) {
-            countUp.start();
-          } else {
-            console.error(countUp.error);
-          }
-
-        $(window).off('scroll');
-    } else {
-        // do nothing
-    }
-});
 
 
 
