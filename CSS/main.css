@@ -1,7 +1,8 @@
-
-
 /*----------Imports----------*/
 
 @import url('https://github.com/silkstudio/stack/blob/master/CSS/fluididity.css');
-@import url('https://github.com/silkstudio/stack/blob/master/CSS/locomotive.css')
+@import url('https://github.com/silkstudio/stack/blob/master/CSS/locomotive.css');
 
+html {
+	padding: 0;
+}
