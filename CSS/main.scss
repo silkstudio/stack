@@ -1,5 +1,5 @@
 /*!
- * The Stack Project - Additional css code for site functionality
+ * The Stack Project - Additional scss code for site functionality
  * (c) 2020 
  * Silk Studio - development + design
  * https://silkstudio.co/
@@ -11,90 +11,35 @@
 
 
 // ==========================================================================
+// 0. Variables
+// ==========================================================================
+
+
+// Colours
+$darkBlue: #160341;
+$lightBlue: #94d6d4;
+$lighterBlue: #d8eded;
+$paleRed: #ed7465;
+$lightGrey: #f6f7f9;
+$white: #fff ;
+
+
+
+
+$transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+
+
+
+
+
+
+
+
+// ==========================================================================
 // 1. Browser Reset
 // ==========================================================================
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark ,audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -128,33 +73,44 @@ html {
 .c-btn,
 .c-submit,
 .c-submit-btn__icon {
-	transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+	transition: $transition;
 }
 
-.c-btn:hover,
-.c-submit:hover {
-	transform: translate(0rem, -0.35rem);
-}
 
-.c-btn.c-btn--dark:hover {
-	padding-right: 3.15rem;
-	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 
-				0px 2px 6px rgba(22, 3, 65, 0.08), 
-				0px 16px 24px rgba(22, 3, 65, 0.1),
-				0px 24px 32px rgba(22, 3, 65, 0.14);
-}
 
-.c-btn.c-btn--light:hover {
-	padding-right: 3.15rem;
-	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 
-				0px 2px 6px rgba(148, 214, 212, 0.08),
-				0px 16px 24px rgba(148, 214, 212, 0.1), 
-				0px 24px 32px rgba(148, 214, 212, 0.14);
-}
+// Coloured Desktop Buttons
+
+@media screen and (min-width: 992px) {
+
+	.c-btn.c-btn--dark:hover {
+		transform: translate(0rem, -0.35rem);
+		padding-right: 3.15rem;
+		box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 
+					0px 2px 6px rgba(22, 3, 65, 0.08), 
+					0px 16px 24px rgba(22, 3, 65, 0.1),
+					0px 24px 32px rgba(22, 3, 65, 0.14);
+	}
+
+	.c-btn.c-btn--light:hover {
+		transform: translate(0rem, -0.35rem);
+		padding-right: 3.15rem;
+		box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 
+					0px 2px 6px rgba(148, 214, 212, 0.08),
+					0px 16px 24px rgba(148, 214, 212, 0.1), 
+					0px 24px 32px rgba(148, 214, 212, 0.14);
+	}
+
+	.c-btn.c-header-btn{
+		background-color: $darkBlue;
+		transition: $transition;
+			&:hover {
+			background-color: $paleRed;
+			}
+	}	
 
 // Form submit button
-@media screen and (min-width: 992px) {
 	.c-submit:hover {
+		transform: translate(0rem, -0.35rem);
 		padding-right: 5.25rem;
 		box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 
 					0px 2px 6px rgba(148, 214, 212, 0.08),
@@ -167,7 +123,6 @@ html {
 		right: 1.75rem;
 		}
 	}
-
 
 	.c-submit:hover {
 		.c-submit-btn__icon {
