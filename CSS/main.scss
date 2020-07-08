@@ -16,17 +16,29 @@
 
 
 // Colours
-$darkBlue: #160341;
-$lightBlue: #94d6d4;
-$lighterBlue: #d8eded;
-$paleRed: #ed7465;
-$lightGrey: #f6f7f9;
-$white: #fff ;
+$darkBlue: rgba(22, 3, 65, 1);
+$lightBlue: rgba(148, 214, 212, 1);
+$lighterBlue: rgba(216, 237, 237, 1);
+$paleRed: rgba(237, 116, 100, 1);
+$lightGrey: rgba(246, 247, 249, 1);
+$white: rgba(255, 255, 255, 1) ;
 
 
 
-
+// Transitions
 $transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+
+
+// Shadows
+$defaultShadow: 48px 48px 100px -20px rgba(22, 3, 65, 1);
+$darkObjShadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 
+				0px 2px 6px rgba(22, 3, 65, 0.08), 
+				0px 16px 24px rgba(22, 3, 65, 0.1), 
+				0px 24px 32px rgba(22, 3, 65, 0.14);
+$lightObjShadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 
+				 0px 2px 6px rgba(148, 214, 212, 0.08), 
+				 0px 16px 24px rgba(148, 214, 212, 0.1), 
+				 0px 24px 32px rgba(148, 214, 212, 0.14);
 
 
 
@@ -79,43 +91,33 @@ html {
 
 
 // Coloured Desktop Buttons
-
 @media screen and (min-width: 992px) {
 
 	.c-btn.c-btn--dark:hover {
 		transform: translate(0rem, -0.35rem);
 		padding-right: 3.15rem;
-		box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 
-					0px 2px 6px rgba(22, 3, 65, 0.08), 
-					0px 16px 24px rgba(22, 3, 65, 0.1),
-					0px 24px 32px rgba(22, 3, 65, 0.14);
+		box-shadow: $darkObjShadow;
 	}
 
 	.c-btn.c-btn--light:hover {
 		transform: translate(0rem, -0.35rem);
 		padding-right: 3.15rem;
-		box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 
-					0px 2px 6px rgba(148, 214, 212, 0.08),
-					0px 16px 24px rgba(148, 214, 212, 0.1), 
-					0px 24px 32px rgba(148, 214, 212, 0.14);
+		box-shadow: $lightObjShadow;
 	}
 
 	.c-btn.c-header-btn{
 		background-color: $darkBlue;
 		transition: $transition;
 			&:hover {
-			background-color: $paleRed;
+			background-color: $lighterBlue;
 			}
 	}	
 
-// Form submit button
+// Form submit buttons
 	.c-submit:hover {
 		transform: translate(0rem, -0.35rem);
 		padding-right: 5.25rem;
-		box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 
-					0px 2px 6px rgba(148, 214, 212, 0.08),
-					0px 16px 24px rgba(148, 214, 212, 0.1), 
-					0px 24px 32px rgba(148, 214, 212, 0.14);
+		box-shadow: $lightObjShadow
 	}
 
 	.c-submit {
@@ -150,11 +152,43 @@ html {
 		font-size: 20rem;
 	}
 
-	.wwd__hero h1 {
+	.wwd__hero h1, 
+	.c-impact-card h4, 
+	.program-stats__grid h2 {
 		font-size: 11.5rem;
+	}
+}
+
+
+// Align sessions button
+.program-sessions{
+		.c-btn {
+	align-self: left;
+	}
+}
+
+
+// Correct tick list text
+.c-splitmodule {
+	.c-ticklist {
+		p {
+			opacity: 0.75;
+		}
 	}
 
-	.c-impact-card h4 {
-		font-size: 11.5rem;
+}
+
+// Correct promgram hero paragraph text
+.programs-hero__inner {
+	p {
+		color: $white;
 	}
+}
+
+// Remotely adding large shadows
+.c-program__hero-img,
+.program-sessions,
+.c-img-stack__img,
+.img-stack--card-dark {
+	box-shadow: $defaultShadow;
 }
