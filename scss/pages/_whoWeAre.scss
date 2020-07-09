@@ -35,6 +35,9 @@
 			transform: translate(-0.75rem, -0.25rem);
 			box-shadow: 48px 48px 98px 60px -10px rgba(0, 0, 0, 0.2);
 		}
+		@media screen and (max-width: 479px) {
+			padding: 12.5rem 7.5rem;
+		}
 	}
 	img {
 		display: inline-block;
@@ -44,19 +47,32 @@
 		border-radius: 50%;
 		box-shadow: 0px 2px 6px 0px rgba(22, 3, 65, 0.08), 0px 16px 24px 0px rgba(22, 3, 65, 0.1),
 			0px 14px 32px 0px rgba(22, 3, 65, 0.14);
+		@media screen and (max-width: 479px) {
+			width: 25rem;
+			height: 25rem;
+		}
 	}
 	// title
 	h5 {
 		margin-top: 1rem;
+		@media screen and (max-width: 479px) {
+			margin-top: 3.5rem;
+		}
 	}
 	// occupation
 	p {
 		margin-top: 0rem;
+		@media screen and (max-width: 479px) {
+			margin-top: 2rem;
+		}
 	}
 	// description
 	.p-small {
 		margin-top: 1rem;
 		color: #433f69;
+	}
+	@media screen and (max-width: 479px) {
+		margin: 5rem 0rem;
 	}
 }
 
