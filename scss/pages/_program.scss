@@ -2,6 +2,14 @@
 // Page: Program
 // ==========================================================================
 
+// Shadows
+.c-program__hero-img,
+.program-sessions,
+.c-img-stack__img,
+.img-stack--card-dark {
+	box-shadow: $defaultShadow;
+}
+
 // Fixes //
 
 // Align sessions button

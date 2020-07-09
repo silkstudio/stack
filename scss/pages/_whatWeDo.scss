@@ -1,12 +1,12 @@
-// Hey there
+// ==========================================================================
+// Page: What we do
+// ==========================================================================
 
-
-.wwa-hero__content {
-    h1 {
-        color: red;
-    }
-}   
-
-
-
-
+// Shadows
+.c-hero-img--wwd,
+.c-img-stack__card,
+.c-img-stack__img--2,
+.c-img-stack__card--2,
+.c-wwd-banner__img {
+	box-shadow: $defaultShadow;
+}

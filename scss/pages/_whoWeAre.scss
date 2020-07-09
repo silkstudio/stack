@@ -2,7 +2,7 @@
 // Page: Who we are
 // ==========================================================================
 
-// Statement Section (too complex for webflow)
+// Statement Section
 .section.wwd__statement {
 	.anim-container {
 		margin-top: 1rem;
@@ -22,4 +22,48 @@
 		color: $white;
 		opacity: .35;
 	}
+}
+
+// Team module
+
+.c-team-module {
+	.c-team-module__item {
+		padding: 3.75rem 2.5rem;
+		transition: $transition;
+		&:hover {
+			z-index: 10;
+			transform: translate(-0.75rem, -0.25rem);
+			box-shadow: 48px 48px 98px 60px -10px rgba(0, 0, 0, 0.2);
+		}
+	}
+	img {
+		display: inline-block;
+		width: 4.375rem;
+		height: 4.375rem;
+		object-fit: cover;
+		border-radius: 50%;
+		box-shadow: $defaultShadow;
+	}
+	// title
+	h5 {
+		margin-top: 1rem;
+	}
+	// occupation
+	p {
+		margin-top: 0.5rem;
+	}
+	// description
+	.p-small {
+		margin-top: 1.5rem;
+		color: #433f69;
+	}
+}
+
+// Shadows
+.wwa-overview__img1,
+.wwa-overview__img2,
+.mission-slider-nav,
+.sticky__mobile-img,
+.c-testimonial-slider__img {
+	box-shadow: $defaultShadow;
 }

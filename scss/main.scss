@@ -12,7 +12,7 @@
 // ==========================================================================
 // 1. Utilities
 // ==========================================================================
-@import 'variables';
+@import './variables';
 @import 'partials/reset';
 
 // ==========================================================================
@@ -105,33 +105,4 @@
 			opacity: 0.75;
 		}
 	}
-}
-
-// Correct promgram hero paragraph text
-
-// Remotely adding large shadows
-
-// Page: Who we are
-.wwa-overview__img1,
-.wwa-overview__img2,
-.mission-slider-nav,
-.sticky__mobile-img {
-	box-shadow: $defaultShadow;
-}
-
-// Page: What we do
-.c-hero-img--wwd,
-.c-img-stack__card,
-.c-img-stack__img--2,
-.c-img-stack__card--2,
-.c-wwd-banner__img {
-	box-shadow: $defaultShadow;
-}
-
-// Page: Program
-.c-program__hero-img,
-.program-sessions,
-.c-img-stack__img,
-.img-stack--card-dark {
-	box-shadow: $defaultShadow;
 }
