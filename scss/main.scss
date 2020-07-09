@@ -85,7 +85,7 @@
 // 3. Fixes
 // ==========================================================================
 
-// Mobile font fixes
+// Global mobile font fixes
 @media screen and (max-width: 479px) {
 	.c-statsmodule h1 {
 		font-size: 20rem;
@@ -93,7 +93,7 @@
 
 	.wwd__hero h1,
 	.c-impact-card h4,
-	.program-stats__grid h2 {
+	.program-stats__grid .l-grid-column h2 {
 		font-size: 11.5rem;
 	}
 }
