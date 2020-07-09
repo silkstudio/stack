@@ -30,7 +30,7 @@ $transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
 
 
 // Shadows
-$defaultShadow: 48px 48px 100px -20px rgba(22, 3, 65, 1);
+$defaultShadow: 48px 48px 100px -20px rgba(9, 1, 25, 0.5);
 $darkObjShadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 
 				0px 2px 6px rgba(22, 3, 65, 0.08), 
 				0px 16px 24px rgba(22, 3, 65, 0.1), 
@@ -170,7 +170,7 @@ html {
 
 // Correct tick list text
 .c-splitmodule {
-	.c-ticklist {
+	.c-tick-list {
 		p {
 			opacity: 0.75;
 		}
@@ -180,15 +180,32 @@ html {
 
 // Correct promgram hero paragraph text
 .programs-hero__inner {
-	p {
+	.p-large {
 		color: $white;
 	}
 }
 
 // Remotely adding large shadows
+
+// Page: Who we are
+.tbc {
+	box-shadow: $defaultShadow;
+}	
+
+// Page: What we do
+.c-hero-img--wwd,
+.c-img-stack__card,
+.c-img-stack__img--2,
+.c-img-stack__card--2,
+.c-wwd-banner__img {
+	box-shadow: $defaultShadow;
+}
+
+// Page: Program
 .c-program__hero-img,
 .program-sessions,
 .c-img-stack__img,
 .img-stack--card-dark {
 	box-shadow: $defaultShadow;
 }
+

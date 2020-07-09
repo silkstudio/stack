@@ -91,19 +91,33 @@ html {
       align-self: left;
 }
 
-.c-splitmodule .c-ticklist p {
+.c-splitmodule .c-tick-list p {
   opacity: 0.75;
 }
 
-.programs-hero__inner p {
+.programs-hero__inner .p-large {
   color: white;
+}
+
+.tbc {
+  -webkit-box-shadow: 48px 48px 100px -20px rgba(9, 1, 25, 0.5);
+          box-shadow: 48px 48px 100px -20px rgba(9, 1, 25, 0.5);
+}
+
+.c-hero-img--wwd,
+.c-img-stack__card,
+.c-img-stack__img--2,
+.c-img-stack__card--2,
+.c-wwd-banner__img {
+  -webkit-box-shadow: 48px 48px 100px -20px rgba(9, 1, 25, 0.5);
+          box-shadow: 48px 48px 100px -20px rgba(9, 1, 25, 0.5);
 }
 
 .c-program__hero-img,
 .program-sessions,
 .c-img-stack__img,
 .img-stack--card-dark {
-  -webkit-box-shadow: 48px 48px 100px -20px #160341;
-          box-shadow: 48px 48px 100px -20px #160341;
+  -webkit-box-shadow: 48px 48px 100px -20px rgba(9, 1, 25, 0.5);
+          box-shadow: 48px 48px 100px -20px rgba(9, 1, 25, 0.5);
 }
 /*# sourceMappingURL=main.css.map */
