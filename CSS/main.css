@@ -99,7 +99,10 @@ html {
   color: white;
 }
 
-.tbc {
+.wwa-overview__img1,
+.wwa-overview__img2,
+.mission-slider-nav,
+.sticky__mobile-img {
   -webkit-box-shadow: 48px 48px 100px -20px #09011980;
           box-shadow: 48px 48px 100px -20px #09011980;
 }
@@ -119,5 +122,24 @@ html {
 .img-stack--card-dark {
   -webkit-box-shadow: 48px 48px 100px -20px #09011980;
           box-shadow: 48px 48px 100px -20px #09011980;
+}
+
+.section.wwd__statement .anim-container {
+  margin-top: 0.5rem;
+}
+
+.section.wwd__statement .anim-container:nth-child(5) {
+  margin-top: 7rem;
+}
+
+.section.wwd__statement h6 {
+  color: white;
+  margin-top: 2rem;
+  opacity: .5;
+}
+
+.section.wwd__statement .p-small {
+  color: white;
+  opacity: .35;
 }
 /*# sourceMappingURL=main.css.map */

@@ -175,7 +175,6 @@ html {
 			opacity: 0.75;
 		}
 	}
-
 }
 
 // Correct promgram hero paragraph text
@@ -188,7 +187,10 @@ html {
 // Remotely adding large shadows
 
 // Page: Who we are
-.tbc {
+.wwa-overview__img1,
+.wwa-overview__img2,
+.mission-slider-nav,
+.sticky__mobile-img {
 	box-shadow: $defaultShadow;
 }	
 
@@ -207,5 +209,28 @@ html {
 .c-img-stack__img,
 .img-stack--card-dark {
 	box-shadow: $defaultShadow;
+}
+
+
+
+
+// Statement Section (too complex for webflow)
+
+.section.wwd__statement{
+	.anim-container{
+		margin-top:0.5rem;
+		&:nth-child(5) {
+			margin-top: 7rem;
+		}
+	}
+	h6 {
+		color: $white;
+		margin-top: 2rem;
+		opacity: .5;
+	}
+	.p-small {
+		color: $white;
+		opacity: .35;
+	}
 }
 
