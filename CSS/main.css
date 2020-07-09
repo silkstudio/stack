@@ -100,8 +100,8 @@ html {
 }
 
 .tbc {
-  -webkit-box-shadow: 48px 48px 100px -20px rgba(9, 1, 25, 0.5);
-          box-shadow: 48px 48px 100px -20px rgba(9, 1, 25, 0.5);
+  -webkit-box-shadow: 48px 48px 100px -20px #09011980;
+          box-shadow: 48px 48px 100px -20px #09011980;
 }
 
 .c-hero-img--wwd,
@@ -109,15 +109,15 @@ html {
 .c-img-stack__img--2,
 .c-img-stack__card--2,
 .c-wwd-banner__img {
-  -webkit-box-shadow: 48px 48px 100px -20px rgba(9, 1, 25, 0.5);
-          box-shadow: 48px 48px 100px -20px rgba(9, 1, 25, 0.5);
+  -webkit-box-shadow: 48px 48px 100px -20px #09011980;
+          box-shadow: 48px 48px 100px -20px #09011980;
 }
 
 .c-program__hero-img,
 .program-sessions,
 .c-img-stack__img,
 .img-stack--card-dark {
-  -webkit-box-shadow: 48px 48px 100px -20px rgba(9, 1, 25, 0.5);
-          box-shadow: 48px 48px 100px -20px rgba(9, 1, 25, 0.5);
+  -webkit-box-shadow: 48px 48px 100px -20px #09011980;
+          box-shadow: 48px 48px 100px -20px #09011980;
 }
 /*# sourceMappingURL=main.css.map */
