@@ -1,0 +1,25 @@
+// ==========================================================================
+// Page: Who we are
+// ==========================================================================
+
+// Statement Section (too complex for webflow)
+.section.wwd__statement {
+	.anim-container {
+		margin-top: 1rem;
+		&:nth-last-child(1) {
+			margin-top: 7rem;
+			@media screen and (max-width: 479px) {
+				margin-top: 25rem;
+			}
+		}
+	}
+	h6 {
+		color: $white;
+		margin-top: 2rem;
+		opacity: .5;
+	}
+	.p-small {
+		color: $white;
+		opacity: .35;
+	}
+}

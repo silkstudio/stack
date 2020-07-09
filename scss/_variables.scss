@@ -1,0 +1,20 @@
+// ==========================================================================
+// Variables
+// ==========================================================================
+
+// Colours
+$darkBlue: rgba(22, 3, 65, 1);
+$lightBlue: rgba(148, 214, 212, 1);
+$lighterBlue: rgba(216, 237, 237, 1);
+$paleRed: rgba(237, 116, 100, 1);
+$lightGrey: rgba(246, 247, 249, 1);
+$white: rgba(255, 255, 255, 1);
+
+$transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+
+// Shadows
+$defaultShadow: 48px 48px 100px -20px rgba(9, 1, 25, 0.502);
+$darkObjShadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(22, 3, 65, 0.08), 0px 16px 24px rgba(22, 3, 65, 0.1),
+	0px 24px 32px rgba(22, 3, 65, 0.14);
+$lightObjShadow: 0px 0px 1px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(148, 214, 212, 0.08),
+	0px 16px 24px rgba(148, 214, 212, 0.1), 0px 24px 32px rgba(148, 214, 212, 0.14);

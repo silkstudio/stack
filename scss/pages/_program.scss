@@ -1,0 +1,19 @@
+// ==========================================================================
+// Page: Program
+// ==========================================================================
+
+// Fixes //
+
+// Align sessions button
+.program-sessions {
+	.c-btn {
+		align-self: left;
+	}
+}
+
+// Correct hero P colour
+.programs-hero__inner {
+	.p-large {
+		color: $white;
+	}
+}
