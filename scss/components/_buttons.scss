@@ -23,7 +23,7 @@
 		background-color: $darkBlue;
 		transition: $transition;
 		&:hover {
-			background-color: $lighterBlue;
+			background-color: $lighterBlue !important;
 		}
 	}
 

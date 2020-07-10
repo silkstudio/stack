@@ -104,6 +104,10 @@ html {
   font-size: 0.83vw;
 }
 
+#luxy::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0);
+}
+
 .c-program__hero-img,
 .program-sessions,
 .c-img-stack__img,
@@ -141,7 +145,7 @@ html {
 }
 
 .c-team-module .c-team-module__item {
-  padding: 3.75rem 2.5rem;
+  padding: 3.75rem 2.5rem 2.5rem 2.5rem;
   transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .c-team-module .c-team-module__item:hover {
@@ -234,7 +238,7 @@ html {
     transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
   }
   .c-btn.c-header-btn:hover {
-    background-color: #d8eded;
+    background-color: #d8eded !important;
   }
 
   .c-submit:hover {
