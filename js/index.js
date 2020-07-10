@@ -19,3 +19,9 @@ function delay(URL) {
 
 // Init quick links to begin listening
 quicklink.listen();
+
+// Remove inline editor styling
+const editorStyles = document.getElementById('editor-styles');
+window.onLoad = () => {
+	editorStyles.style.display = 'none';
+};

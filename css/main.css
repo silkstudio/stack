@@ -104,6 +104,21 @@ html {
   font-size: 0.83vw;
 }
 
+.c-program__hero-img,
+.program-sessions,
+.c-img-stack__img,
+.img-stack--card-dark {
+  box-shadow: 48px 48px 100px -20px rgba(9, 1, 25, 0.502);
+}
+
+.program-sessions .c-btn {
+  align-self: left;
+}
+
+.programs-hero__inner .p-large {
+  color: white;
+}
+
 .section.wwd__statement .anim-container {
   margin-top: 1rem;
 }
@@ -132,7 +147,7 @@ html {
 .c-team-module .c-team-module__item:hover {
   z-index: 10;
   transform: translate(-0.75rem, -0.25rem);
-  box-shadow: 48px 48px 98px 60px -10px rgba(0, 0, 0, 0.2);
+  box-shadow: 48px 48px 60px -10px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 479px) {
   .c-team-module .c-team-module__item {
@@ -193,21 +208,6 @@ html {
 .c-img-stack__card--2,
 .c-wwd-banner__img {
   box-shadow: 48px 48px 100px -20px rgba(9, 1, 25, 0.502);
-}
-
-.c-program__hero-img,
-.program-sessions,
-.c-img-stack__img,
-.img-stack--card-dark {
-  box-shadow: 48px 48px 100px -20px rgba(9, 1, 25, 0.502);
-}
-
-.program-sessions .c-btn {
-  align-self: left;
-}
-
-.programs-hero__inner .p-large {
-  color: white;
 }
 
 .c-btn,
