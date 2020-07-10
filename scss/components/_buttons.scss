@@ -1,0 +1,52 @@
+// Button hover states
+.c-btn,
+.c-submit,
+.c-submit-btn__icon {
+	transition: $transition;
+}
+
+// Coloured Desktop Buttons
+@media screen and (min-width: 992px) {
+	.c-btn.c-btn--dark:hover {
+		transform: translate(0rem, -0.35rem);
+		padding-right: 3.15rem;
+		box-shadow: $darkObjShadow;
+	}
+
+	.c-btn.c-btn--light:hover {
+		transform: translate(0rem, -0.35rem);
+		padding-right: 3.15rem;
+		box-shadow: $lightObjShadow;
+	}
+
+	.c-btn.c-header-btn {
+		background-color: $darkBlue;
+		transition: $transition;
+		&:hover {
+			background-color: $lighterBlue;
+		}
+	}
+
+	// Form submit buttons
+	.c-submit:hover {
+		transform: translate(0rem, -0.35rem);
+		padding-right: 5.25rem;
+		box-shadow: $lightObjShadow;
+	}
+
+	.c-submit {
+		.c-submit-btn__icon {
+			right: 1.75rem;
+		}
+	}
+
+	.c-submit:hover {
+		.c-submit-btn__icon {
+			right: 2.5rem;
+		}
+	}
+}
+
+.c-submit__btn:focus {
+	outline: none;
+}

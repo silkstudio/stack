@@ -12,77 +12,21 @@
 // ==========================================================================
 // 1. Utilities
 // ==========================================================================
-@import './variables';
-@import 'partials/reset';
+@import 'variables';
+@import 'vendors/_vendors-dir';
 
 // ==========================================================================
 // 2. Pages
 // ==========================================================================
-@import 'pages/home';
-@import 'pages/whoWeAre';
-@import 'pages/whatWeDo';
-@import 'pages/program';
-@import 'pages/contact';
+@import 'pages/_pages-dir';
 
 // ==========================================================================
 // 3. Components
 // ==========================================================================
-
-// Button hover states
-.c-btn,
-.c-submit,
-.c-submit-btn__icon {
-	transition: $transition;
-}
-
-// Coloured Desktop Buttons
-@media screen and (min-width: 992px) {
-	.c-btn.c-btn--dark:hover {
-		transform: translate(0rem, -0.35rem);
-		padding-right: 3.15rem;
-		box-shadow: $darkObjShadow;
-	}
-
-	.c-btn.c-btn--light:hover {
-		transform: translate(0rem, -0.35rem);
-		padding-right: 3.15rem;
-		box-shadow: $lightObjShadow;
-	}
-
-	.c-btn.c-header-btn {
-		background-color: $darkBlue;
-		transition: $transition;
-		&:hover {
-			background-color: $lighterBlue;
-		}
-	}
-
-	// Form submit buttons
-	.c-submit:hover {
-		transform: translate(0rem, -0.35rem);
-		padding-right: 5.25rem;
-		box-shadow: $lightObjShadow;
-	}
-
-	.c-submit {
-		.c-submit-btn__icon {
-			right: 1.75rem;
-		}
-	}
-
-	.c-submit:hover {
-		.c-submit-btn__icon {
-			right: 2.5rem;
-		}
-	}
-}
-
-.c-submit__btn:focus {
-	outline: none;
-}
+@import 'components/_components-dir';
 
 // ==========================================================================
-// 3. Fixes
+// 4. Fixes
 // ==========================================================================
 
 // Global mobile font fixes
