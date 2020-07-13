@@ -1,6 +1,8 @@
+// ==========================================================================
+// Home.js
+// ==========================================================================
 
-
-// --- Homepage Counters --- //
+// Counters //
 
 // Get elements to count
 const elementOne = document.getElementById('counter-trigger-1');
