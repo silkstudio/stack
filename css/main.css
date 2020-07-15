@@ -260,6 +260,14 @@ html {
   outline: none;
 }
 
+.c-nav__dropdown-link .img-overlay {
+  transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.c-nav__dropdown-link:hover .img-overlay {
+  opacity: 0.5;
+}
+
 @media screen and (max-width: 479px) {
   .c-statsmodule h1 {
     font-size: 20rem;

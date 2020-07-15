@@ -1,0 +1,13 @@
+.c-nav__dropdown-link {
+	.img-overlay {
+		transition: $transition;
+	}
+}
+
+.c-nav__dropdown-link {
+	&:hover {
+		.img-overlay {
+			opacity: .5;
+		}
+	}
+}
