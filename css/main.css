@@ -104,6 +104,12 @@ html {
   font-size: 0.83vw;
 }
 
+html::-webkit-scrollbar,
+body::-webkit-scrollbar,
+#luxy::-webkit-scrollbar {
+  display: none;
+}
+
 #luxy::-webkit-scrollbar {
   background-color: rgba(0, 0, 0, 0);
 }
