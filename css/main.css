@@ -110,10 +110,6 @@ body::-webkit-scrollbar,
   display: none;
 }
 
-#luxy::-webkit-scrollbar {
-  background-color: rgba(0, 0, 0, 0);
-}
-
 .c-program__hero-img,
 .program-sessions,
 .c-img-stack__img,
